@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Londonapp.css">
+    <title>My First Project</title>
+</head>
+<body>
+
+    <div class="loginpage">
+        <div class="form">
+           
+            <h2 class="Welcome">Welcome</h2>
+
+            <!-- Username Input Field -->
+            <input type="text" placeholder="Username" class="input-field">
+            <span class="username-validation">Username length must be &lt; 12</span>
+
+            <!-- Password Input Field -->
+            <input type="password" placeholder="Password" class="input-field password-field">
+            <span class="password-validation">Password length must be &lt; 8</span>
+
+            <!-- Login Button -->
+            <button class="Login" id="login-button">Login</button>
+
+            <!-- Success Modal -->
+            <div class="modal" id="mymodal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close-button" id="close-button">&times;</span>
+                    <p>Welcome! You are successfully logged in.</p>
+                </div>
+            </div>
+
+            <!-- Create Account Link -->
+            <p class="message">Don't have an account? <a href="#" id="message-a">Create an account</a></p>
+
+        </div>
+    </div>
+
+    <script src="London.js"></script>
+</body>
+</html>

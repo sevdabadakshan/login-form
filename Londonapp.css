@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #b751dd, #f2f1f4);
+    margin: 0;
+    /* Reset default browser margins */
+}
+
+.loginpage {
+    box-shadow: 0 4px 30px rgba(240, 240, 6, 0.5) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f0eef3, #d583e0);
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(78, 1, 130, 0.3);
+    margin: auto;
+    transition: 0.3s;
+}
+
+.loginpage:hover {
+    transform: translateY(-8px);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    /* Aligns all form elements vertically */
+    width: 90%;
+    gap: 8px;
+    /* Gap between form elements */
+}
+
+/* Ensure validation messages appear directly below inputs */
+span {
+    display: block;
+    font-size: 12px;
+    color: #d9534f;
+}
+
+.input-field {
+    background: linear-gradient(to bottom, #f0eef3, #d583e0);
+    border-radius: 20px !important;
+    box-shadow: 0 4px 10px rgba(70, 1, 75, 0.5) !important;
+    border: 2px solid rgb(71, 71, 74) !important;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px; /* Prevents auto-zoom on iOS devices */
+    transition: 0.3s;
+}
+
+.input-field:hover,
+.input-field:focus {
+    color: #ce228f;
+    border-color: #6c63ff;
+    transform: scale(1.02); /* Smoother and more professional scale effect */
+}
+
+.Welcome {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    display: inline-block;
+    background: linear-gradient(to bottom, #0d0d0f, #d24de3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.Login {
+    background: linear-gradient(to bottom, #f0eef3, #d583e0);
+    border-radius: 10px !important;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Login:hover,
+.Login:focus {
+    color: #ce228f;
+    transform: scale(1.05);
+}
+
+.username-validation, 
+.password-validation {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-color {
+    color: red !important;
+}
+
+.success-color {
+    color: green !important;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    min-width: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1201px) {
+    body {
+        font-size: 16px;
+    }
+}
